@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/category_dialog_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check1"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginRight="5dp"
+                android:text="만근비 지원"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check2"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginLeft="5dp"
+                android:text="진상없음"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check3"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginRight="5dp"
+                android:text="지명비보장"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check4"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginLeft="5dp"
+                android:text="블랙관리철저"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check5"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginRight="5dp"
+                android:text="개수보장"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check6"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginLeft="5dp"
+                android:text="술강요없음"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check7"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginRight="5dp"
+                android:text="고수입보장"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check8"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginLeft="5dp"
+                android:text="친구와근무가능"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check9"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginRight="5dp"
+                android:text="파트타임가능"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check10"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginLeft="5dp"
+                android:text="텃세없음"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check11"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginRight="5dp"
+                android:text="출퇴근자유"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check12"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginLeft="5dp"
+                android:text="가족같은분위기"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check13"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginRight="5dp"
+                android:text="시간조정가능"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check14"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginLeft="5dp"
+                android:text="복장자유"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check15"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginRight="5dp"
+                android:text="초이스없음"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/guarantee_dialog_check16"
+                android:background="@drawable/round_stroke_border"
+                android:layout_marginLeft="5dp"
+                android:text="외모많이안따짐"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/guarantee_dialog_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="확인"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/guarantee_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:text="취소"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="업종선택"
+        android:textSize="20dp" />-->
+
+
+</LinearLayout>

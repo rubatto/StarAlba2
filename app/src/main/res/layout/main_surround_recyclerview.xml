@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/surround_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:id="@+id/surround_profile_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/surround_profile_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/black_oval_stroke_border" />
+
+        <TextView
+            android:id="@+id/surround_profile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLength="5"
+            android:text="name"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/surround_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/surround_profile_framelayout"
+        android:layout_toRightOf="@+id/surround_profile_framelayout"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="title"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/surround_theme_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/surround_profile_framelayout"
+        android:layout_toRightOf="@+id/surround_profile_framelayout"
+        android:text="theme"
+        android:textColor="@color/deepBlue" />
+
+    <TextView
+        android:id="@+id/surround_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/surround_profile_framelayout"
+        android:layout_toRightOf="@+id/surround_profile_framelayout"
+        android:text="type"
+        android:textColor="@color/deepRed" />
+
+    <TextView
+        android:id="@+id/surround_pay_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/surround_type_tv"
+        android:layout_toRightOf="@+id/surround_type_tv"
+        android:text="pay"
+        android:textColor="@color/deepGreen" />
+
+    <TextView
+        android:id="@+id/surround_wage_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/surround_pay_tv"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/surround_pay_tv"
+        android:layout_toRightOf="@+id/surround_pay_tv"
+        android:text="wage" />
+
+    <TextView
+        android:id="@+id/surround_distance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:text="distance" />
+
+    <ImageView
+        android:id="@+id/surround_chat_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/surround_chat" />
+
+    <ImageView
+        android:id="@+id/surround_star_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/surround_star" />
+</RelativeLayout>

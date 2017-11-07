@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">스타알바</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--main tab-->
+    <string name="main_tab_label1">주변업소</string>
+    <string name="main_tab_label2">업소정보</string>
+    <string name="main_tab_label3">인재정보</string>
+
+    <!--fragment tab-->
+    <string name="frag_tab_label0">요정</string>
+    <string name="frag_tab_label1">노래주점</string>
+    <string name="frag_tab_label2">룸</string>
+    <string name="frag_tab_label3">바(BAR)</string>
+    <string name="frag_tab_label4">텐프로</string>
+    <string name="frag_tab_label5">까페</string>
+    <string name="frag_tab_label6">서빙</string>
+    <string name="frag_tab_label7">직업소개소</string>
+
+    <!--drawer-->
+    <string name="notice">공지사항</string>
+    <string name="manage_ad">광고관리</string>
+    <string name="manage_chat">채팅관리</string>
+    <string name="mypage">마이페이지</string>
+    <string name="setting">환경설정</string>
+
+    <!--광고관리-->
+    <string name="manage_ad_resgister">신규광고등록</string>
+    <string name="manage_ad_notice">공지사항</string>
+    <string name="manage_ad_guide">광고등록안내</string>
+
+    <!--광고등록-->
+    <string name="register_ad_hint_business_name">광고 업체명 입력</string>
+    <string name="register_ad_hint_title">광고할 제목을 입력하세요</string>
+    <string name="register_ad_hint_name">실명/직급 입력(예:김철수,김대표)</string>
+    <string name="register_ad_hint_phone">핸드폰 번호를 입력하세요</string>
+    <string name="register_ad_hint_category">업종을 선택하세요</string>
+    <string name="register_ad_hint_pay_se">급여를 선택하세요</string>
+    <string name="register_ad_hint_address">주소를 입력해 주세요</string>
+    <string name="register_ad_hint_theme">업소의 관심테마(특징)을 선택해 주세요</string>
+    <string name="register_ad_hint_guarantee">보장정보를 선택해 주세요</string>
+    <string name="register_ad_hint_introduce">(업소 간단소개 예시문구)\n돈 좀 그만 벌고 싶다!\n할 때까지 책임지는 업소입니다!!\n편안한 분위기로 일 하실 수 있어요~\n망설이지 마시고\n스타알바에서 보고 연락드려요 하고\n연락주세요~~</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

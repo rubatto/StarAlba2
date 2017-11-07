@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/category_dialog_root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="업종선택"
+        android:textSize="20dp" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary" />
+
+    <RadioGroup
+        android:id="@+id/category_dialog_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/category_dialog_radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="요정" />
+
+        <RadioButton
+            android:id="@+id/category_dialog_radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="노래주점" />
+
+        <RadioButton
+            android:id="@+id/category_dialog_radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="룸" />
+
+        <RadioButton
+            android:id="@+id/category_dialog_radio4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="바(BAR)" />
+
+        <RadioButton
+            android:id="@+id/category_dialog_radio5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="텐프로" />
+
+        <RadioButton
+            android:id="@+id/category_dialog_radio6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="까페" />
+
+        <RadioButton
+            android:id="@+id/category_dialog_radio7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다방" />
+
+        <RadioButton
+            android:id="@+id/category_dialog_radio8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="직업소개소" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="">
+
+        <Button
+            android:id="@+id/category_dialog_confirm"
+            android:layout_marginRight="5dp"
+            android:text="확인"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/category_dialog_cancel"
+            android:layout_marginLeft="5dp"
+            android:text="취소"
+            android:textColor="@color/white"
+            android:background="@color/gray"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

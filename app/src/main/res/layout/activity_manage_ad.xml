@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_manage_ad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rubatto.staralba.NoticeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/manage_ad_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:theme="@style/ToolbarColoredBackArrow"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/manage_ad"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/manage_ad_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/appBarLayout"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/manage_horizontal_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manage_ad_line"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/manage_ad_resgister_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/manage_ad_register"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:text="@string/manage_ad_resgister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray"/>
+
+        <LinearLayout
+            android:id="@+id/manage_ad_notice_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/manage_notice"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:text="@string/manage_ad_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray"/>
+
+        <LinearLayout
+            android:id="@+id/manage_ad_guide_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/manage_guide"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:text="@string/manage_ad_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/manage_ad_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_below="@+id/manage_horizontal_linear"/>
+
+    <FrameLayout
+        android:layout_below="@+id/manage_ad_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/manage_ad_progress"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/manage_ad_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_notice"
+            android:icon="@drawable/nav_notice"
+            android:title="@string/notice" />
+        <item
+            android:id="@+id/drawer_ad"
+            android:icon="@drawable/nav_ad"
+            android:title="@string/manage_ad" />
+        <item
+            android:id="@+id/drawer_chat"
+            android:icon="@drawable/nav_chat"
+            android:title="@string/manage_chat" />
+        <item
+            android:id="@+id/drawer_mypage"
+            android:icon="@drawable/nav_mypage"
+            android:title="@string/mypage" />
+        <item
+            android:id="@+id/drawer_setting"
+            android:icon="@drawable/nav_setting"
+            android:title="@string/setting" />
+    </group>
+
+</menu>

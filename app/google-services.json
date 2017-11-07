@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1096125495631",
+    "firebase_url": "https://staralbachat.firebaseio.com",
+    "project_id": "staralbachat",
+    "storage_bucket": "staralbachat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096125495631:android:59d6c6bab9a42bff",
+        "android_client_info": {
+          "package_name": "com.rubatto.staralba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096125495631-nog28muhvda08nbreh311qv7t3mqnp9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj07YVvCwwQ5WI0SZZrwnTy9Q4D81H_i8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

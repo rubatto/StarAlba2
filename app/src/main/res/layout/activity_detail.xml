@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rubatto.staralba.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/register_background"
+                    android:orientation="vertical"
+                    android:paddingTop="45dp">
+
+                    <!--<ImageView
+                        android:id="@+id/register_backbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/left_arrow_white" />-->
+
+                    <TextView
+                        android:id="@+id/detail_business_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/orange"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <FrameLayout
+                            android:id="@+id/detail_profile_framelayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp">
+
+                            <ImageView
+                                android:id="@+id/detail_profile_img"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:background="@drawable/round_border" />
+
+                            <TextView
+                                android:id="@+id/detail_profile_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:text="name"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_toEndOf="@+id/detail_profile_framelayout"
+                            android:layout_toRightOf="@+id/detail_profile_framelayout"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="bottom">
+
+                                <TextView
+                                    android:id="@+id/detail_title_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLength="15"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/detail_title_underline"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/register_name" />
+
+                                <TextView
+                                    android:id="@+id/detail_name_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLength="15"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/register_phone" />
+
+                                <TextView
+                                    android:id="@+id/detail_phone_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLength="12"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/appBarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    app:elevation="0dp">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/detail_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+                </android.support.design.widget.AppBarLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_stroke_border"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/register_category" />
+
+                        <TextView
+                            android:id="@+id/detail_category_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/register_ad_hint_category"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/detail_pay_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_stroke_border"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/register_pay_se" />
+
+                        <TextView
+                            android:id="@+id/detail_pay_se_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="급여를"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/detail_pay_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="선택하세요"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/detail_address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/round_stroke_border"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/register_address"
+                        android:id="@+id/imageView" />
+
+                    <TextView
+                        android:id="@+id/detail_address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_ad_hint_address"
+                        android:textColor="@color/black"
+                        android:maxLength="30"
+                        android:ellipsize="end"
+                        android:layout_alignBottom="@+id/imageView"
+                        android:layout_toRightOf="@+id/imageView"
+                        android:layout_toEndOf="@+id/imageView" />
+                    
+                    <ImageView
+                        android:background="@color/colorPrimary"
+                        android:src="@drawable/floating_pin"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/imageView2" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_theme_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/round_stroke_border"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!--<ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/register_theme" />
+
+                    <TextView
+                        android:id="@+id/detail_theme_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_ad_hint_theme"
+                        android:textColor="@color/black" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_guarantee_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/round_stroke_border"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!--<ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/register_guarantee" />
+
+                    <TextView
+                        android:id="@+id/detail_gurantee_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_ad_hint_guarantee"
+                        android:textColor="@color/black" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_stroke_border"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/nav_mypage" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="상세 소개"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/detail_introduce_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="@string/register_ad_hint_introduce"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/detail_call_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/detail_call" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전화" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_sms_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/detail_sms" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="문자" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_chat_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/detail_chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="채팅" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_star_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/detail_star" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="즐겨찾기" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
